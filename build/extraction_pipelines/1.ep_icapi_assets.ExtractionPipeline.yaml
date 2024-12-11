@@ -1,0 +1,9 @@
+externalId: ep_icapi_assets
+name: Ice Cream API Assets
+dataSetExternalId: ds_icapi
+description: This is related to extraction
+rawTables:
+- dbName: ice_cream_api
+  tableName: icapi_assets_extractor
+source: Ice Cream API
+documentation: test
