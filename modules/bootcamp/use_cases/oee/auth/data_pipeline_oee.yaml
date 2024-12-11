@@ -33,3 +33,4 @@ capabilities:
       scope:
         datasetScope:
           ids: [{{ uc_oee_ds_external_id }}]
+          
