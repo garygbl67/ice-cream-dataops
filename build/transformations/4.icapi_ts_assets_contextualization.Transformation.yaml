@@ -1,0 +1,17 @@
+externalId: icapi_ts_assets_contextualization
+dataSetExternalId: ds_icapi
+name: icapi_ts_assets_contextualization
+destination:
+  type: timeseries
+ignoreNullFields: true
+isPublic: true
+conflictMode: update
+authentication:
+  clientId: ${ICAPI_EXTRACTORS_CLIENT_ID}
+  clientSecret: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
+  tokenUri: ${IDP_TOKEN_URL}
+  cdfProjectName: cdf-bootcamp-21-test
+  scopes: https://westeurope-1.cognitedata.com/.default
+query: "SELECT ts.externalId AS externalId,\n      ast.id AS assetId\nFROM `_cdf`.`timeseries`\
+  \ AS ts\nINNER JOIN `_cdf`.`assets` AS ast ON split(ts.externalId, \":\") [0] =\
+  \ ast.externalIdv"
