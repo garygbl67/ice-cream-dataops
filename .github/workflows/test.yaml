@@ -42,3 +42,5 @@ jobs:
         working-directory: ./ice-cream-dataops
         run: |
           poetry run cdf-tk deploy --env=test
+
+          
