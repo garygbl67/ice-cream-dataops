@@ -1,10 +1,10 @@
 environment:
-  name: prod
+  name: prod                                                                                                                                                                                                                   
   project: cdf-bootcamp-21-prod
   type: prod
   selected:
   - modules/
-  - modules/bootcamp/data_foundation
+  - modules/bootcamp/data_foundation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
   - modules/bootcamp/ice_cream_api
   - modules/bootcamp/use_cases/oee
 
@@ -13,12 +13,12 @@ variables:
   modules:
     bootcamp:
       CDF_PROJECT: cdf-bootcamp-21-prod # ex. cdf-bootcamp-01-prod
-      IDP_CLIENT_ID: ${IDP_CLIENT_ID} # replaced by .env
+      IDP_CLIENT_ID: ${IDP_CLIENT_ID} # replaced by .env                                                                      
       IDP_CLIENT_SECRET: ${IDP_CLIENT_SECRET} # replaced by .env
       IDP_TENANT_ID: ${IDP_TENANT_ID} # replaced by .env
       # This is related to the cluster where the CDF project is hosted.
       CDF_URL: https://westeurope-1.cognitedata.com
-      IDP_SCOPES: https://westeurope-1.cognitedata.com/.default
+      IDP_SCOPES: https://westeurope-1.cognitedata.com/.default                                                                                                                                                                                                                                                                                                                                                                                                                                                              
       IDP_TOKEN_URL: ${IDP_TOKEN_URL} # replaced by .env
       # Groups
       # OBJECT ID FOR prod/PROD DATA PIPELINE OEE ENTRA GROUP
