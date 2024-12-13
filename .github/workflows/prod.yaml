@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - 'ice-cream-dataops/**'
+      - '/**'
       - '.github/workflows/**'
 jobs:
   build-modules:
@@ -35,10 +35,10 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: "Build the package"
-        working-directory: ./ice-cream-dataops
+        working-directory: ./
         run: |
           poetry run cdf-tk build --env=prod
       - name: "Deploy the package"
-        working-directory: ./ice-cream-dataops
+        working-directory: ./
         run: |
           poetry run cdf-tk deploy --env=prod
